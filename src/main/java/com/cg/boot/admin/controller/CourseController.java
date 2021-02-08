@@ -55,6 +55,9 @@ public class CourseController {
 		}
 		return new ResponseEntity<Course>(updateCourse, HttpStatus.OK);
 	}
+	/*
+	Delete course
+	*/
 
 	@DeleteMapping("/deleteCourse/{courseId}/{userId}")
 	public ResponseEntity<List<Course>> deleteCourse(@PathVariable("courseId") int courseId,
